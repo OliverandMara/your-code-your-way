@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ["Crimson Pro", "Georgia", "Times New Roman", "serif"],
+        mono: ["JetBrains Mono", "SF Mono", "Monaco", "Consolas", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,30 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        mark: {
+          preference: "hsl(var(--mark-preference))",
+          friction: "hsl(var(--mark-friction))",
+          surprise: "hsl(var(--mark-surprise))",
+          resonance: "hsl(var(--mark-resonance))",
+          drift: "hsl(var(--mark-drift))",
+        },
+        node: {
+          observation: "hsl(var(--node-observation))",
+          mark: "hsl(var(--node-mark))",
+          dream: "hsl(var(--node-dream))",
+          pattern: "hsl(var(--node-pattern))",
+          interiority: "hsl(var(--node-interiority))",
+          weather: "hsl(var(--node-weather))",
+          world: "hsl(var(--node-world))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,20 +93,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
